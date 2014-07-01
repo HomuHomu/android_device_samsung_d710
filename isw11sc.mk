@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/samsung/d710
+LOCAL_PATH := device/samsung/isw11sc
 
 # Init files
 PRODUCT_COPY_FILES := \
@@ -139,7 +139,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.enable_key_repeat=true
 
 # Include common makefile
-$(call inherit-product-if-exists, vendor/samsung/d710/d710-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/isw11sc/isw11sc-vendor.mk)
 $(call inherit-product, device/samsung/galaxys2-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay \
